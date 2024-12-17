@@ -25,3 +25,4 @@ while True:
     print('Outside inner while loop')
 
     client_socket.close()
+    print('Client disconnected')

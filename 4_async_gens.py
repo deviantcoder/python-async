@@ -39,6 +39,7 @@ def client(client_socket):
 
     client_socket.close()
 
+
 def event_loop():
     while any([tasks, to_read, to_write]):
         while not tasks:

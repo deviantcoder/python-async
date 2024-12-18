@@ -11,8 +11,10 @@ def subgen():
     message = yield x
     print('Subgen received', message)
 
+
 class PlugException(Exception):
     pass
+
 
 @coroutine
 def average():
@@ -33,3 +35,5 @@ def average():
             count =+ 1
             summ += x
             average = round(summ / count, 2)
+
+    return average
